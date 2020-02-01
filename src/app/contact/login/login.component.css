@@ -1,0 +1,52 @@
+section{
+    background-image: url('src/assets/img/cta-bg.jpg');
+    background-size: cover;
+     background-position: center;
+    width:100%;
+    height:100vh;
+    /* position: relative; */
+    z-index: -1200;
+    padding-top: 4rem !important;
+}
+.one img{
+    width:100%;
+    height:auto;
+    position: absolute;
+    z-index: 1200;
+}
+.container{
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+.card{
+     box-shadow: 0px 5px 14px 0px #2B92DF; 
+     width:76%;      
+     position: absolute;
+     z-index: 2000;
+}
+.modal-dialog.cascading-modal .modal-c-tabs .md-tabs {
+    margin: 0rem !important;
+}
+.modal-dialog.cascading-modal .modal-c-tabs .tab-content {
+    padding: 1.7rem 0 0 0;
+    box-shadow: 0px 5px 14px 0px #2B92DF !important;
+}
+#modalLRForm img{
+    max-width: 26%;
+    height: auto;
+    margin-left: 37%;
+}
+#modalLRForm {
+margin-top: -4rem;
+}
+.nav-tabs .nav-link{
+    border:1px solid #fff;
+}
+.custom-file-label::after{
+    background-image:linear-gradient(#46b6ee,#0093df);
+    color:#fff;
+
+}
+.tab-content img{
+    border-radius: 100% !important;
+}

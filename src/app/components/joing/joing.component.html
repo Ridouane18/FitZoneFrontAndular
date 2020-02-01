@@ -1,0 +1,181 @@
+<!--Modal: Login / Register Form-->
+<div class="" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog cascading-modal" role="document">
+        <!--Content-->
+        <div class="modal-content">
+            <!--Modal cascading tabs-->
+            <div class="modal-c-tabs">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-2" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" data-toggle="tab" href="#panel7" role="tab">
+                Spécialiste</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" data-toggle="tab" href="#panel9" role="tab">
+                    Coach</a>
+                    </li>
+                </ul>
+                <!-- Tab panels -->
+                <div class="tab-content">
+                    <!-- start Specialiste -->
+                    <!--Panel 7-->
+                    <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+                        <form [formGroup]="addFoodSpecialistForm" (ngSubmit)="addFoodSpecialist()">
+                            <img src="assets\img\2.png" class="img-fluid img-responsive" alt="ph">
+                            <!--Body-->
+                            <div class="modal-body mb-1">
+                                <div class="form-row mb-2">
+                                    <!-- username -->
+                                    <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="username" formControlName="username">
+                                </div>
+                                <!-- Password -->
+                                <input type="password" id="defaultRegisterFormPassword" class="form-control mb-3" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock" formControlName="password">
+                                <!-- photo -->
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFileLangHTML" formControlName="photo">
+                                    <label class="custom-file-label" for="customFileLangHTML" data-browse="Choisir image"></label>
+                                </div>
+                                <!-- bio-->
+                                <div class="form-group mt-2">
+                                    <textarea class="form-control" id="exampleFormControlTextarea3" rows="7" formControlName="bio"></textarea>
+                                </div>
+                                <div class="text-center my-3">
+                                    <button type="submit" class="btn blue-gradient btn-block btn-rounded z-depth-1a">Valider</button>
+                                </div>
+                            </div>
+                        </form>
+                        <!--Footer-->
+                    </div>
+                    <!--/.Panel 7-->
+                    <!-- end Specialiste -->
+
+
+                    <!-- start coach -->
+                    <!--Panel 8-->
+                    <div class="tab-pane fade" id="panel9" role="tabpanel">
+                        <form [formGroup]="addCoachForm" (ngSubmit)="addCoach()">
+                            <img src="assets\img\4.png" class="img-fluid img-responsive" alt="ph">
+                            <!--Body-->
+                            <div class="modal-body mb-1">
+                                <div class="form-row mb-2">
+                                    <!-- username -->
+                                    <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="username" formControlName="username">
+                                </div>
+                                <!-- Password -->
+                                <input type="password" id="defaultRegisterFormPassword" class="form-control mb-3" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock" formControlName="password">
+                                <!-- photo -->
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFileLangHTML" formControlName="photo">
+                                    <label class="custom-file-label" for="customFileLangHTML" data-browse="Choisir image"></label>
+                                </div>
+                                <!-- bio-->
+                                <div class="form-group mt-2">
+                                    <textarea class="form-control" id="exampleFormControlTextarea3" rows="7" formControlName="bio"></textarea>
+                                </div>
+                                <div class="text-center my-3">
+                                    <button type="submit" class="btn blue-gradient btn-block btn-rounded z-depth-1a">Valider</button>
+                                </div>
+                            </div>
+                        </form>
+                        <!--Footer-->
+                    </div>
+                    <!--/.Panel 8-->
+                    <!-- end coach -->
+
+
+                </div>
+
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+<!--Modal: Login / Register Form-->
+<!-- **************************** -->
+
+<!-- start section-joingUp -->
+<section class="pb-5">
+    <div class="container-fluid">
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-7 heading-section text-center">
+                <h3 class="subheading pt-5">Shape Your Body</h3>
+                <h2 class="mb-1">Our Coaches</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-xd-6 d-flex">
+                <div class="coach align-items-stretch">
+                    <img src="assets\img\2.png" class="img" alt="ph">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-xd-6 d-flex">
+                <div class="text bg-white p-4">
+                    <span class="subheading">Owner / Head Coach</span>
+                    <h3>Victor Hump</h3>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    <ul class="ftco-social-media d-flex mt-4">
+                        <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="mr-2 d-flex justify-content-center align-items-center"><i class="fab fa-twitter"></i></a></li>
+                        <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="mr-2 d-flex justify-content-center align-items-center"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="mr-2 d-flex justify-content-center align-items-center"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-xd-6 d-flex">
+                <div class="coach align-items-stretch">
+                    <img src="assets\img\4.png" class="img" alt="ph">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-xd-6 d-flex">
+                <div class="text bg-white p-4">
+                    <span class="subheading">Owner / Head Coach</span>
+                    <h3>Victor Hump</h3>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    <ul class="ftco-social-media d-flex mt-4">
+                        <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="mr-2 d-flex justify-content-center align-items-center"><i class="fab fa-twitter"></i></a></li>
+                        <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="mr-2 d-flex justify-content-center align-items-center"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="mr-2 d-flex justify-content-center align-items-center"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-xd-6 d-flex">
+                <div class="text bg-white p-4">
+                    <span class="subheading">Owner / Head Coach</span>
+                    <h3>Victor Hump</h3>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    <ul class="ftco-social-media d-flex mt-4">
+                        <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="mr-2 d-flex justify-content-center align-items-center"><i class="fab fa-twitter"></i></a></li>
+                        <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="mr-2 d-flex justify-content-center align-items-center"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="mr-2 d-flex justify-content-center align-items-center"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-xd-6 d-flex">
+                <div class="coach align-items-stretch">
+                    <img src="assets\img\5.png" class="img" alt="ph">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-xd-6 d-flex">
+                <div class="text bg-white p-4">
+                    <span class="subheading">Owner / Head Coach</span>
+                    <h3>Victor Hump</h3>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    <ul class="ftco-social-media d-flex mt-4">
+                        <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="mr-2 d-flex justify-content-center align-items-center"><i class="fab fa-twitter"></i></a></li>
+                        <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="mr-2 d-flex justify-content-center align-items-center"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="ftco-animate fadeInUp ftco-animated"><a href="#" class="mr-2 d-flex justify-content-center align-items-center"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-xd-6 d-flex">
+                <div class="coach align-items-stretch">
+                    <img src="assets\img\1.png" class="img mx-auto" alt="ph">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- end section-joingUp -->
+
+<!-- ********************************* -->
